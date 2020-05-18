@@ -8,23 +8,23 @@
 
 Role.create(name: :admin)
 Role.create(name: :client)
-user1 = User.create(username: 'Nicole',
-								    email: 'admin@gmail.com',
-								    password: 'password1234',
-								    password_confirmation: 'password1234')
+user1 = User.create(username: 'Tamil',
+								    email: 'tamilror@gmail.com',
+								    password: 'tamil1234',
+								    password_confirmation: 'tamil1234')
 user1.add_role(:admin)
 user2 = User.create(username: 'Bruce',
 								    email: 'client@gmail.com',
 								    password: 'password1234',
 								    password_confirmation: 'password1234')
 user2.add_role(:client)
-1.upto(5) do |i|
-	Product.create(name: "monitor #{i}",
-								 price: 'user1 test',
+1.upto(3) do |i|
+	Product.create(name: "tamilror #{i}",
+								 description:test1,
 								 user: user1)
 end
-1.upto(5) do |i|
+1.upto(4) do |i|
 	Product.create(name: "keyboard #{i}",
-								 price:'user2 test' ,
+								 description: test2,
 								 user: user2)
 end

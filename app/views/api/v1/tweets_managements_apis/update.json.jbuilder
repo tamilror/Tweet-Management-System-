@@ -1,0 +1,1 @@
+json.partial! '/api/v1/tweets/show', tweet: @tweet, full: true

@@ -13,10 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
-#@import "bootstrap-sprockets";
-#@import "bootstrap";
-
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
 #main-container {
   position: relative;
   padding-top: 50px;
@@ -34,7 +32,9 @@
 
 .btn {
   text-decoration: none;
+
 }
+.btn-info{color: #fff;}
 
 body {
   background: #f2f2f2;
@@ -48,4 +48,30 @@ th {
 td {
   background-color: #808080;
   color: white;
+}
+.navbar-inverse {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{background-color: #5bc0de;}
+.actions{margin-bottom:10px;}
+
+
+
+a {
+  color: #000;
+
+
+  &:visited {
+    color: #fff;
+
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
 }

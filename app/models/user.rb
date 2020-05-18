@@ -15,5 +15,5 @@ end
 
 def client?
   has_role?(:client)
-end 
+end
 end

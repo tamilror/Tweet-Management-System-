@@ -1,0 +1,2 @@
+class TweetsManagementApi < ApplicationRecord
+end

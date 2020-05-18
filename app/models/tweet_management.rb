@@ -1,2 +1,0 @@
-class TweetManagement < ApplicationRecord
-end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_15_075101) do
+ActiveRecord::Schema.define(version: 2020_05_17_074116) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_05_15_075101) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.string "description"
     t.index ["user_id"], name: "index_products_on_user_id"
   end
 
@@ -33,6 +34,19 @@ ActiveRecord::Schema.define(version: 2020_05_15_075101) do
   end
 
   create_table "tweet_managements", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tweets_management_apis", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tweets_managements", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.datetime "created_at", null: false
