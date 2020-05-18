@@ -29,7 +29,7 @@ gem 'sass-rails', '~> 5.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-  gem 'bootstrap-sass', '~> 3.3.6'
+  gem 'bootstrap-sass', '~> 3.4.1'
   gem 'devise'
   gem 'cancancan', '~> 1.10'
   gem 'rolify'
